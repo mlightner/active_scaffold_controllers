@@ -28,7 +28,7 @@ class ActiveScaffoldAutoAdmin
     Dir[model_dir].each do |file|
       file.to_s =~ /([\w\-\_]+)\.rb$/i
       next unless model = $1
-      puts"  map.connect 'admin/#{model.pluralize}/:action/:id', :controller => 'admin/#{model.pluralize}"
+      puts"  map.connect 'admin/#{model.pluralize}/:action/:id', :controller => 'admin/#{model.pluralize}'"
 # RESTful
 #      puts"  map.resources :#{model.pluralize}, :active_scaffold => true"
     end
